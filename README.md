@@ -26,3 +26,10 @@ The dataset is an example. This was built up from the following api searches:
 - hospital in Glasgow
 - cinema in Glasgow
 - community centres in Glasgow
+
+====
+
+As you can see from the data set, there are a few false positives, in terms of directions pages and in terms of pages with cycling directions. 
+
+But good on you GFT and NHS Greater Glasgow and Clyde for providing cycling directions!
+
