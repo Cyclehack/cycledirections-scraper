@@ -45,7 +45,7 @@ def append_to_venues_hash(results)
     data = Nokogiri::HTML(open(directions_url))
     site_text = data.text.downcase
     has_cycling = site_text.include?("cycling") or site_text.include?("bike") or site_text.include?("cycle")
-    has_directions = site_text.include?("walk") or site_text.include?("bus") or site_text.include?("train") or site_text.include?("car")
+    has_directions = site_text.include?("walk") or site_text.include?("bus") or site_text.include?("train") or site_text.include?("car") or site_text.include?("driving")
      
     @venues << { :name => result['name'], :address => result["formatted_address"], :directions_site => directions_url, :could_scrape => true, :has_cycling => has_cycling, :has_directions => has_directions }
     rescue
